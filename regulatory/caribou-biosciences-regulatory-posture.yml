@@ -1,0 +1,30 @@
+generated: '2026-10-07'
+method: probed
+source: https://www.cariboubio.com/privacy-policy/
+signals:
+  data_retention:
+    evidence:
+      - source: https://www.cariboubio.com/privacy-policy/
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "We may retain certain information as required by law or for legitimate business purposes."
+        note: Retains data as required by law or business purposes.
+      - source: https://www.cariboubio.com/privacy-policy/
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "We may also retain cached or archived copies of information about you for a certain period of time."
+        note: May keep archived copies.
+  data_subject_request:
+    evidence:
+      - source: https://www.cariboubio.com/privacy-policy/
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "You may update, correct, or delete information about you at any time by emailing us at privacy@cariboubio.com."
+        note: Provides a mechanism for data correction/deletion.
+  subprocessors:
+    evidence:
+      - source: https://www.cariboubio.com/privacy-policy/
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "IT Service Providers may have access to Personal Information such as personal identifiers, account credentials, usage information, device information, cookie information, and transaction information."
+        note: Mentions service providers accessing personal data.

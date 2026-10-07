@@ -1,31 +1,57 @@
 aid: caribou-biosciences
+
 name: Caribou Biosciences
+
 description: 'Caribou Biosciences is a clinical-stage biopharmaceutical company focused on developing transformative genome‑edited allogeneic cell therapies. Leveraging its proprietary CRISPR hybrid RNA‑DNA (chRDNA) technology, Caribou creates off‑the‑shelf CAR‑T cell therapies aimed at treating devastating diseases such as cancers and genetic disorders. The company emphasizes precision genome editing, armored cell therapies, and rapid patient access, positioning itself as a leader in the CRISPR field.'
+
 url: https://raw.githubusercontent.com/api-evangelist/caribou-biosciences/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-07 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-07'
+
 modified: '2026-10-07'
+
 tags:
 - Company
 - Biotechnology
 - Genome Editing
 - Cell Therapy
 - CRISPR
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/caribou-biosciences-hosts.yml
+- type: SDKs
+  url: packages/caribou-biosciences-packages.yml
+- type: Packages
+  url: packages/caribou-biosciences-packages.yml
 - type: DomainSecurity
   url: security/caribou-biosciences-domain-security.yml
 - type: Website
   url: https://www.cariboubio.com
+- type: Documentation
+  url: https://www.cariboubio.com/technology/
+- type: TermsOfService
+  url: https://www.cariboubio.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.cariboubio.com/privacy-policy/
+
+apis: []
+
 x-coverage:
   state: unreadable
   reason: no-machine-readable-spec
@@ -33,4 +59,10 @@ x-coverage:
   evidence:
     - url: https://api.cariboubio.com/openapi.json
       status: 000
-  checked: 2026-10-07
+  checked: '2026-10-07'
+x-enrichment:
+  date: '2026-10-07'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
