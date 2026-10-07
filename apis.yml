@@ -1,7 +1,6 @@
 aid: caribou-biosciences
 name: Caribou Biosciences
-description: 'Caribou Biosciences is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Caribou Biosciences is a clinical-stage biopharmaceutical company focused on developing transformative genome‑edited allogeneic cell therapies. Leveraging its proprietary CRISPR hybrid RNA‑DNA (chRDNA) technology, Caribou creates off‑the‑shelf CAR‑T cell therapies aimed at treating devastating diseases such as cancers and genetic disorders. The company emphasizes precision genome editing, armored cell therapies, and rapid patient access, positioning itself as a leader in the CRISPR field.'
 url: https://raw.githubusercontent.com/api-evangelist/caribou-biosciences/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +11,10 @@ created: '2026-10-07'
 modified: '2026-10-07'
 tags:
 - Company
+- Biotechnology
+- Genome Editing
+- Cell Therapy
+- CRISPR
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +22,15 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/caribou-biosciences-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/caribou-biosciences_stock/
+  url: https://www.cariboubio.com
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI/AsyncAPI/GraphQL spec found at the API host https://api.cariboubio.com
+  evidence:
+    - url: https://api.cariboubio.com/openapi.json
+      status: 000
+  checked: 2026-10-07
